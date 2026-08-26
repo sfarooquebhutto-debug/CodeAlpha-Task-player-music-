@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #edf1f5;
+
+    font-family: Arial, sans-serif;
+
+}
+
+
+.player {
+
+    width: 420px;
+
+    max-width: 92%;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+
+}
+
+
+.player h1 {
+
+    margin-bottom: 20px;
+
+}
+
+
+.cover {
+
+    width: 190px;
+
+    height: 190px;
+
+    margin: 20px auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1e3c72,
+            #2a5298
+        );
+
+    color: white;
+
+    font-size: 80px;
+
+}
+
+
+.song-info h2 {
+
+    margin: 10px 0 5px;
+
+}
+
+
+.song-info p {
+
+    color: #68717b;
+
+    margin: 5px;
+
+}
+
+
+#progress {
+
+    width: 100%;
+
+    margin: 20px 0;
+
+}
+
+
+.controls {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    margin: 20px 0;
+
+}
+
+
+.controls button {
+
+    width: 60px;
+
+    height: 60px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #1f6fb2;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+}
+
+
+.controls button:hover {
+
+    filter: brightness(1.15);
+
+}
+
+
+.volume {
+
+    display: block;
+
+    text-align: left;
+
+    margin: 20px 0;
+
+}
+
+
+#volume {
+
+    width: 100%;
+
+    margin-top: 8px;
+
+}
+
+
+.upload {
+
+    padding: 15px;
+
+    border: 2px dashed #b8c1ca;
+
+    border-radius: 10px;
+
+    margin: 20px 0;
+
+}
+
+
+.upload label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+}
+
+
+.upload input {
+
+    width: 100%;
+
+}
+
+
+.autoplay {
+
+    display: block;
+
+    margin: 15px;
+
+}
+
+
+.player h3 {
+
+    text-align: left;
+
+    margin-top: 20px;
+
+}
+
+
+#playlist {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin-top: 10px;
+
+    max-height: 180px;
+
+    overflow-y: auto;
+
+    text-align: left;
+
+}
+
+
+#playlist li {
+
+    padding: 12px;
+
+    border-bottom: 1px solid #e5e8eb;
+
+    cursor: pointer;
+
+}
+
+
+#playlist li:hover {
+
+    background: #f0f5fa;
+
+}
+
+
+#playlist li.active {
+
+    font-weight: bold;
+
+    background: #e5f1fc;
+
+}
+
+
+@media (max-width: 450px) {
+
+    .player {
+
+        padding: 20px;
+
+    }
+
+
+    .cover {
+
+        width: 150px;
+
+        height: 150px;
+
+        font-size: 60px;
+
+    }
+
+}

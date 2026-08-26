@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="player">
+
+        <h1>My Music Player</h1>
+
+
+        <div class="cover">
+            ♪
+        </div>
+
+
+        <div class="song-info">
+
+            <h2 id="title">
+                No Song Selected
+            </h2>
+
+            <p id="artist">
+                Add your music below
+            </p>
+
+            <p id="time">
+                0:00 / 0:00
+            </p>
+
+        </div>
+
+
+        <!-- Progress -->
+
+        <input
+            type="range"
+            id="progress"
+            min="0"
+            max="100"
+            value="0"
+        >
+
+
+        <!-- Controls -->
+
+        <div class="controls">
+
+            <button id="previous">
+                ⏮
+            </button>
+
+            <button id="play">
+                ▶
+            </button>
+
+            <button id="next">
+                ⏭
+            </button>
+
+        </div>
+
+
+        <!-- Volume -->
+
+        <label class="volume">
+
+            Volume
+
+            <input
+                type="range"
+                id="volume"
+                min="0"
+                max="1"
+                step="0.01"
+                value="1"
+            >
+
+        </label>
+
+
+        <!-- Add Music -->
+
+        <div class="upload">
+
+            <label>
+                Select Music
+            </label>
+
+            <input
+                type="file"
+                id="fileInput"
+                accept="audio/*"
+                multiple
+            >
+
+        </div>
+
+
+        <!-- Autoplay -->
+
+        <label class="autoplay">
+
+            <input
+                type="checkbox"
+                id="autoplay"
+            >
+
+            Autoplay next song
+
+        </label>
+
+
+        <!-- Playlist -->
+
+        <h3>Playlist</h3>
+
+        <ul id="playlist"></ul>
+
+
+        <audio id="audio"></audio>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
